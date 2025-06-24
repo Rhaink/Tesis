@@ -1,0 +1,59 @@
+# Entorno Virtual
+.venv/
+venv/
+env/
+
+# Dataset de imágenes de COVID-19
+COVID-19_Radiography_Dataset/
+
+# Carpetas de resultados generados
+pulmones/results/
+pulmones_1d/results/
+pulmones_2d/results/
+pulmones_asm_delunay_morphing/results/
+pulmones_cnn/results/
+pulmones_versionantigua_morfing/results/
+
+# Modelos entrenados (archivos .pkl y .pth)
+pulmones/models/*.pkl
+pulmones_1d/models/*.pkl
+pulmones_2d/models/*.pkl
+pulmones_cnn/models/*.pth
+pulmones_cnn/models/*.pkl
+pulmones_asm_delunay_morphing/models/*.pkl
+pulmones_versionantigua_morfing/models/*.pkl
+
+# Archivos de datos aumentados de CNN
+pulmones_cnn/cnn_data_augmented/*.npy
+
+# Archivos de Python generados
+__pycache__/
+*.pyc
+
+# Archivos de Jupyter Notebook
+.ipynb_checkpoints/
+
+# Archivos de log
+*.log
+
+# Archivos CSV generados en carpetas de análisis/resultados
+pulmones/analysis/dataset_morphology_analysis/*.csv
+pulmones_versionantigua_morfing/analysis/dataset_morphology_analysis/*.csv
+pulmones_versionantigua_morfing/analysis/training_set_analysis/*.csv
+pulmones_2d/results/evaluacion_prueba_2d/*.csv
+pulmones_cnn/results/evaluacion_cnn_clasificada/*.csv
+pulmones_cnn/results/evaluacion_cnn_final/*.csv
+pulmones_versionantigua_morfing/results/evaluacion_clasificada/*.csv
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+
+# Archivos de entorno (contienen contraseñas y secrets)
+.env
+
+
+# Archivos de build y distribución
+dist/
+build/
+*.egg-info/
