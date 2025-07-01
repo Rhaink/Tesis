@@ -14,6 +14,11 @@ pulmones_asm_delunay_morphing/results/
 pulmones_cnn/results/
 pulmones_versionantigua_morfing/results/
 
+# Template Matching - Visualizaciones y resultados grandes
+template_matching/visualizations/
+template_matching/results/*.pkl
+template_matching/test_contour/
+
 # Modelos entrenados (archivos .pkl y .pth)
 pulmones/models/*.pkl
 pulmones_1d/models/*.pkl
@@ -35,6 +40,7 @@ __pycache__/
 
 # Archivos de log
 *.log
+training.log
 
 # Archivos CSV generados en carpetas de análisis/resultados
 pulmones/analysis/dataset_morphology_analysis/*.csv

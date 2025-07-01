@@ -1,0 +1,8 @@
+Model: predictor
+Patch size: 21
+PCA components: 20
+Pyramid levels: 3
+Training samples: 639
+Test samples: 159
+Mean error: inf pixels
+Std error: 0.00 pixels
