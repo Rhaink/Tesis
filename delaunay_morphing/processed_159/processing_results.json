@@ -1,0 +1,1274 @@
+[
+  {
+    "image_name": "COVID-3519",
+    "template_matching_error": 5.0759438307706555,
+    "morphing_distance": 17.32895110776372,
+    "procrustes_distance": 11.882145902835417,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3173",
+    "template_matching_error": 5.941499246999395,
+    "morphing_distance": 15.270294810684257,
+    "procrustes_distance": 15.141377071611066,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-761",
+    "template_matching_error": 5.928749070008949,
+    "morphing_distance": 26.566292467614506,
+    "procrustes_distance": 18.099724278499245,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-707",
+    "template_matching_error": 5.392366044006097,
+    "morphing_distance": 16.96143229807892,
+    "procrustes_distance": 19.411965972388007,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1327",
+    "template_matching_error": 6.273214039997422,
+    "morphing_distance": 20.362263358846477,
+    "procrustes_distance": 17.749337424973426,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-993",
+    "template_matching_error": 5.955963625280242,
+    "morphing_distance": 15.311710106705323,
+    "procrustes_distance": 16.508055522134853,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4507",
+    "template_matching_error": 5.80837030970581,
+    "morphing_distance": 15.28725764099294,
+    "procrustes_distance": 14.151936865323199,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2072",
+    "template_matching_error": 4.830665610123449,
+    "morphing_distance": 22.122793039200136,
+    "procrustes_distance": 14.992583807316679,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-10078",
+    "template_matching_error": 5.54993559700597,
+    "morphing_distance": 27.879787659328752,
+    "procrustes_distance": 7.4878856014922155,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9298",
+    "template_matching_error": 4.895330513995191,
+    "morphing_distance": 35.76971931291119,
+    "procrustes_distance": 34.04570293422609,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-856",
+    "template_matching_error": 4.0241062892020425,
+    "morphing_distance": 29.81490474653434,
+    "procrustes_distance": 8.320955235922096,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4484",
+    "template_matching_error": 4.872944528233105,
+    "morphing_distance": 21.636536600644586,
+    "procrustes_distance": 10.963689954993722,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-889",
+    "template_matching_error": 5.226579827166427,
+    "morphing_distance": 33.801836632163024,
+    "procrustes_distance": 12.638647841004515,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2007",
+    "template_matching_error": 5.499577301202598,
+    "morphing_distance": 53.11031487762646,
+    "procrustes_distance": 19.154327167552154,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-335",
+    "template_matching_error": 6.229521434074351,
+    "morphing_distance": 18.497854920916236,
+    "procrustes_distance": 10.440155168593664,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3691",
+    "template_matching_error": 5.2078029427954435,
+    "morphing_distance": 17.4933606780743,
+    "procrustes_distance": 12.218149221562056,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2606",
+    "template_matching_error": 6.832213508854983,
+    "morphing_distance": 14.478044623838649,
+    "procrustes_distance": 19.109792054864894,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-5829",
+    "template_matching_error": 5.868727554323627,
+    "morphing_distance": 23.711017099170192,
+    "procrustes_distance": 13.345560598529575,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3720",
+    "template_matching_error": 7.034091502755004,
+    "morphing_distance": 21.457298683422035,
+    "procrustes_distance": 34.8470433737075,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-642",
+    "template_matching_error": 6.902919848614107,
+    "morphing_distance": 14.442309908518894,
+    "procrustes_distance": 9.895936395762343,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3805",
+    "template_matching_error": 5.719181937269066,
+    "morphing_distance": 14.063066928598001,
+    "procrustes_distance": 11.444760490662743,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4448",
+    "template_matching_error": 4.594668448976571,
+    "morphing_distance": 36.31695383498711,
+    "procrustes_distance": 34.927088023076436,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-1891",
+    "template_matching_error": 3.761896832292171,
+    "morphing_distance": 10.151542545090166,
+    "procrustes_distance": 9.387614662824937,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-8732",
+    "template_matching_error": 5.497159373159259,
+    "morphing_distance": 29.14307031597848,
+    "procrustes_distance": 10.239769265743465,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-401",
+    "template_matching_error": 6.148111043777933,
+    "morphing_distance": 32.04095365498202,
+    "procrustes_distance": 13.69709772559037,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2358",
+    "template_matching_error": 5.899600470585967,
+    "morphing_distance": 18.20065374470154,
+    "procrustes_distance": 7.9071672278492455,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-10105",
+    "template_matching_error": 6.605621591430829,
+    "morphing_distance": 12.1312052056939,
+    "procrustes_distance": 8.472653390048928,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2657",
+    "template_matching_error": 6.2635969856019225,
+    "morphing_distance": 33.270120369025804,
+    "procrustes_distance": 30.948077945572226,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-745",
+    "template_matching_error": 7.009992388723197,
+    "morphing_distance": 23.74119456085272,
+    "procrustes_distance": 15.35089142504258,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-6322",
+    "template_matching_error": 6.083289044758972,
+    "morphing_distance": 19.966115750734335,
+    "procrustes_distance": 26.63481863004394,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-551",
+    "template_matching_error": 6.02191754514218,
+    "morphing_distance": 69.08500305381935,
+    "procrustes_distance": 50.446366785700064,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2536",
+    "template_matching_error": 5.976851042943214,
+    "morphing_distance": 52.366570262041776,
+    "procrustes_distance": 16.210027453579496,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2169",
+    "template_matching_error": 4.639800644229075,
+    "morphing_distance": 16.656614725420162,
+    "procrustes_distance": 13.852833743344656,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-5329",
+    "template_matching_error": 5.129309682027548,
+    "morphing_distance": 9.002248921470743,
+    "procrustes_distance": 8.53779759794591,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2258",
+    "template_matching_error": 4.910988483170196,
+    "morphing_distance": 22.786579119883225,
+    "procrustes_distance": 19.92230329342993,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2638",
+    "template_matching_error": 3.6719347660202244,
+    "morphing_distance": 26.706701812849996,
+    "procrustes_distance": 25.45667350116571,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9248",
+    "template_matching_error": 5.617354465599437,
+    "morphing_distance": 13.438496488313485,
+    "procrustes_distance": 14.351236914343481,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-95",
+    "template_matching_error": 4.149874643977592,
+    "morphing_distance": 31.091952809563093,
+    "procrustes_distance": 23.370044222928374,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-675",
+    "template_matching_error": 6.106248657976534,
+    "morphing_distance": 19.758863672782464,
+    "procrustes_distance": 15.787821258131597,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-901",
+    "template_matching_error": 6.482292292568361,
+    "morphing_distance": 16.986104606914285,
+    "procrustes_distance": 16.02853565253012,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3090",
+    "template_matching_error": 6.301535077516363,
+    "morphing_distance": 11.824963077261012,
+    "procrustes_distance": 12.385149721424296,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9934",
+    "template_matching_error": 5.887611268263487,
+    "morphing_distance": 23.49454907529613,
+    "procrustes_distance": 15.686431904938699,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-943",
+    "template_matching_error": 7.545576746378445,
+    "morphing_distance": 14.319988130228866,
+    "procrustes_distance": 16.603120544858903,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3321",
+    "template_matching_error": 6.165238407637592,
+    "morphing_distance": 32.41590074089051,
+    "procrustes_distance": 15.01806507212389,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2829",
+    "template_matching_error": 6.5277734696742495,
+    "morphing_distance": 45.808628639493875,
+    "procrustes_distance": 25.950136872222433,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-7192",
+    "template_matching_error": 4.771649673830774,
+    "morphing_distance": 38.11895629315538,
+    "procrustes_distance": 32.242864514515446,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9174",
+    "template_matching_error": 3.720792481668247,
+    "morphing_distance": 20.264911389584324,
+    "procrustes_distance": 28.487381534073034,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-18",
+    "template_matching_error": 5.036104272334064,
+    "morphing_distance": 21.690326239658706,
+    "procrustes_distance": 15.504388333638275,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9309",
+    "template_matching_error": 4.92633006256732,
+    "morphing_distance": 14.334429718113363,
+    "procrustes_distance": 13.71316496283882,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1100",
+    "template_matching_error": 4.158702506277423,
+    "morphing_distance": 15.629082957725823,
+    "procrustes_distance": 13.86353659763362,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2542",
+    "template_matching_error": 4.873805976050163,
+    "morphing_distance": 23.099624762672878,
+    "procrustes_distance": 12.866894169357009,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4470",
+    "template_matching_error": 5.19229737554893,
+    "morphing_distance": 27.750750005528356,
+    "procrustes_distance": 26.24261884223363,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-64",
+    "template_matching_error": 7.772834191942071,
+    "morphing_distance": 19.560703687490992,
+    "procrustes_distance": 19.767868222418592,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-8317",
+    "template_matching_error": 6.627623900261692,
+    "morphing_distance": 11.38595426730949,
+    "procrustes_distance": 9.284347327061143,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-1588",
+    "template_matching_error": 6.641136010630343,
+    "morphing_distance": 38.667431904184895,
+    "procrustes_distance": 20.59745130401135,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-1137",
+    "template_matching_error": 7.166873672215271,
+    "morphing_distance": 29.126148302011416,
+    "procrustes_distance": 13.215153883690927,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3593",
+    "template_matching_error": 5.131894141477815,
+    "morphing_distance": 22.082899408897266,
+    "procrustes_distance": 18.103730857144683,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-80",
+    "template_matching_error": 5.685626916226267,
+    "morphing_distance": 28.555040500779683,
+    "procrustes_distance": 29.780882215025187,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-623",
+    "template_matching_error": 5.327620585074031,
+    "morphing_distance": 35.40889845489914,
+    "procrustes_distance": 17.6415582639209,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-395",
+    "template_matching_error": 4.31730700088526,
+    "morphing_distance": 15.304535276465012,
+    "procrustes_distance": 13.511175981734503,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2299",
+    "template_matching_error": 3.608589776767638,
+    "morphing_distance": 12.948305740487273,
+    "procrustes_distance": 11.425322200490353,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-789",
+    "template_matching_error": 5.266534829181375,
+    "morphing_distance": 15.366492673365864,
+    "procrustes_distance": 7.981941781843705,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-7635",
+    "template_matching_error": 4.61600994702389,
+    "morphing_distance": 11.346354433502544,
+    "procrustes_distance": 10.604377442246848,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3492",
+    "template_matching_error": 5.791943848067622,
+    "morphing_distance": 13.216710998732378,
+    "procrustes_distance": 12.382817892539942,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-1088",
+    "template_matching_error": 6.65517425292225,
+    "morphing_distance": 12.813846458979985,
+    "procrustes_distance": 13.36171468912841,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4297",
+    "template_matching_error": 5.443005045326097,
+    "morphing_distance": 17.872696004950907,
+    "procrustes_distance": 14.646539829527866,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1057",
+    "template_matching_error": 6.984492677601153,
+    "morphing_distance": 11.716690422617694,
+    "procrustes_distance": 10.666532436261765,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1043",
+    "template_matching_error": 6.595173128501207,
+    "morphing_distance": 13.759033755317821,
+    "procrustes_distance": 9.992765470966164,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1144",
+    "template_matching_error": 6.2110597276137804,
+    "morphing_distance": 35.92489217994601,
+    "procrustes_distance": 25.18072483425748,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-220",
+    "template_matching_error": 5.7642936986379345,
+    "morphing_distance": 11.98201227707946,
+    "procrustes_distance": 12.296631393428266,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-8879",
+    "template_matching_error": 5.11520783377511,
+    "morphing_distance": 19.815814445881482,
+    "procrustes_distance": 16.642750064146135,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3716",
+    "template_matching_error": 5.512204517469923,
+    "morphing_distance": 39.6323286943939,
+    "procrustes_distance": 25.600143918661306,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9419",
+    "template_matching_error": 5.230628322949625,
+    "morphing_distance": 22.931808645082004,
+    "procrustes_distance": 17.077969108649267,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3099",
+    "template_matching_error": 4.48457639009034,
+    "morphing_distance": 15.38222819120633,
+    "procrustes_distance": 14.714290900523679,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1199",
+    "template_matching_error": 4.450309274507845,
+    "morphing_distance": 42.44007327285372,
+    "procrustes_distance": 24.417910801464163,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-7573",
+    "template_matching_error": 4.521033160128897,
+    "morphing_distance": 38.05775745423893,
+    "procrustes_distance": 13.27319020082801,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-10111",
+    "template_matching_error": 7.123381586805078,
+    "morphing_distance": 55.67693819393481,
+    "procrustes_distance": 14.117273122645567,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-421",
+    "template_matching_error": 7.298547838620201,
+    "morphing_distance": 29.40414787293337,
+    "procrustes_distance": 35.32513715094661,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-605",
+    "template_matching_error": 6.618679568505593,
+    "morphing_distance": 21.21857987489219,
+    "procrustes_distance": 20.98441633701915,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-1387",
+    "template_matching_error": 6.280607275412606,
+    "morphing_distance": 10.75242887274626,
+    "procrustes_distance": 10.335173682450106,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4120",
+    "template_matching_error": 4.427900524603848,
+    "morphing_distance": 37.77410847677292,
+    "procrustes_distance": 15.589673426650029,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3380",
+    "template_matching_error": 4.689030586785004,
+    "morphing_distance": 22.687018895096745,
+    "procrustes_distance": 19.267662850057473,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-709",
+    "template_matching_error": 5.386672814221544,
+    "morphing_distance": 24.617726135237106,
+    "procrustes_distance": 11.96193338540636,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-334",
+    "template_matching_error": 4.8770984911679385,
+    "morphing_distance": 17.24386051450295,
+    "procrustes_distance": 25.30716855687774,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2281",
+    "template_matching_error": 4.827060751695288,
+    "morphing_distance": 18.45700077501355,
+    "procrustes_distance": 13.771231825684877,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-232",
+    "template_matching_error": 4.3241668646242974,
+    "morphing_distance": 18.417100789260463,
+    "procrustes_distance": 16.846105808684452,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-1582",
+    "template_matching_error": 5.707995114891185,
+    "morphing_distance": 11.004664819105981,
+    "procrustes_distance": 9.988299264892621,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-93",
+    "template_matching_error": 5.406539738073686,
+    "morphing_distance": 33.79557036659173,
+    "procrustes_distance": 18.10847065279204,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-720",
+    "template_matching_error": 5.4530804320195205,
+    "morphing_distance": 27.301805038473876,
+    "procrustes_distance": 21.93371651392566,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1161",
+    "template_matching_error": 6.564918120357103,
+    "morphing_distance": 25.01821591122631,
+    "procrustes_distance": 24.525460243329302,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-528",
+    "template_matching_error": 6.813428081066399,
+    "morphing_distance": 34.979117408532666,
+    "procrustes_distance": 14.912073831354284,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-844",
+    "template_matching_error": 5.265475070602493,
+    "morphing_distance": 36.32916756289009,
+    "procrustes_distance": 51.89002575290591,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-52",
+    "template_matching_error": 7.043188436312887,
+    "morphing_distance": 23.020218195851452,
+    "procrustes_distance": 16.612597527337556,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1220",
+    "template_matching_error": 6.488044651197706,
+    "morphing_distance": 30.799170649119084,
+    "procrustes_distance": 16.06224487336896,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-1560",
+    "template_matching_error": 4.8808001377119075,
+    "morphing_distance": 16.4529720593601,
+    "procrustes_distance": 11.71965743690118,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4498",
+    "template_matching_error": 5.385754978720487,
+    "morphing_distance": 29.467654051458908,
+    "procrustes_distance": 17.117876991829256,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-94",
+    "template_matching_error": 4.5582971177792935,
+    "morphing_distance": 13.88398862454639,
+    "procrustes_distance": 17.434458466193053,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-207",
+    "template_matching_error": 3.6090072367117956,
+    "morphing_distance": 16.735490062561617,
+    "procrustes_distance": 12.383628142065522,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-5289",
+    "template_matching_error": 5.205237883915697,
+    "morphing_distance": 16.172129533635,
+    "procrustes_distance": 16.433543866887966,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9797",
+    "template_matching_error": 4.504388747358963,
+    "morphing_distance": 8.018709341542188,
+    "procrustes_distance": 8.098699910702681,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-647",
+    "template_matching_error": 5.0481276352174955,
+    "morphing_distance": 17.938856994807814,
+    "procrustes_distance": 13.552159517879396,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3580",
+    "template_matching_error": 4.327679253066142,
+    "morphing_distance": 15.21312671987548,
+    "procrustes_distance": 8.725255514344259,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-6560",
+    "template_matching_error": 5.265071449938668,
+    "morphing_distance": 27.0520027416388,
+    "procrustes_distance": 15.49310002816555,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-100",
+    "template_matching_error": 6.889460745263957,
+    "morphing_distance": 11.903151403892446,
+    "procrustes_distance": 11.049349112782558,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9112",
+    "template_matching_error": 6.3058558191839165,
+    "morphing_distance": 19.986560541492835,
+    "procrustes_distance": 18.892417806368062,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1260",
+    "template_matching_error": 7.191787943816189,
+    "morphing_distance": 29.827450457629745,
+    "procrustes_distance": 34.088411755721665,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-526",
+    "template_matching_error": 5.847048620722508,
+    "morphing_distance": 8.732514566515095,
+    "procrustes_distance": 7.6778201989035715,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4284",
+    "template_matching_error": 5.9447687618209875,
+    "morphing_distance": 13.387508599656629,
+    "procrustes_distance": 13.16633713670867,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-30",
+    "template_matching_error": 5.278786906188661,
+    "morphing_distance": 17.67740141150427,
+    "procrustes_distance": 12.759091177624235,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1321",
+    "template_matching_error": 3.538047192821691,
+    "morphing_distance": 9.88660536832876,
+    "procrustes_distance": 9.785172272354078,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9898",
+    "template_matching_error": 3.4148695521953845,
+    "morphing_distance": 40.17814787259851,
+    "procrustes_distance": 41.25246925686677,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-1756",
+    "template_matching_error": 5.39472186197259,
+    "morphing_distance": 18.95698912741596,
+    "procrustes_distance": 16.20866664829514,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3263",
+    "template_matching_error": 5.115067198144825,
+    "morphing_distance": 16.969230682150524,
+    "procrustes_distance": 11.40561976583776,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-7608",
+    "template_matching_error": 5.664346730531931,
+    "morphing_distance": 14.579094666736774,
+    "procrustes_distance": 7.353190792494397,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-1970",
+    "template_matching_error": 5.2668888543941845,
+    "morphing_distance": 25.28834000340894,
+    "procrustes_distance": 11.38197636172312,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9836",
+    "template_matching_error": 5.50014918325769,
+    "morphing_distance": 9.414061180154128,
+    "procrustes_distance": 6.764543820842851,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2575",
+    "template_matching_error": 7.705781065316034,
+    "morphing_distance": 20.531007991449695,
+    "procrustes_distance": 14.191462379987,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2865",
+    "template_matching_error": 7.133632101491167,
+    "morphing_distance": 16.86821212445322,
+    "procrustes_distance": 26.45054202007975,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-424",
+    "template_matching_error": 5.16649062722783,
+    "morphing_distance": 23.399491701711256,
+    "procrustes_distance": 14.466355618604723,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2174",
+    "template_matching_error": 5.724116324926401,
+    "morphing_distance": 20.71039653157804,
+    "procrustes_distance": 22.436441393357477,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9200",
+    "template_matching_error": 6.373835763109317,
+    "morphing_distance": 13.055119626289695,
+    "procrustes_distance": 14.045342340280687,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-634",
+    "template_matching_error": 4.648688373340359,
+    "morphing_distance": 12.387373978128892,
+    "procrustes_distance": 10.11263459951097,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1255",
+    "template_matching_error": 3.5682101638861825,
+    "morphing_distance": 13.153037113494808,
+    "procrustes_distance": 12.523231453663293,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3154",
+    "template_matching_error": 5.525034413067004,
+    "morphing_distance": 15.852621652765311,
+    "procrustes_distance": 15.252545569478169,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-7178",
+    "template_matching_error": 4.835907013997254,
+    "morphing_distance": 26.19661477113187,
+    "procrustes_distance": 19.291183311538976,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-5079",
+    "template_matching_error": 5.496386375192445,
+    "morphing_distance": 38.065297590194945,
+    "procrustes_distance": 38.427902675230364,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-1943",
+    "template_matching_error": 4.777077768032403,
+    "morphing_distance": 15.349262561335923,
+    "procrustes_distance": 12.286172631466938,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-902",
+    "template_matching_error": 6.721805394788998,
+    "morphing_distance": 21.621836398088686,
+    "procrustes_distance": 24.333231148528753,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-599",
+    "template_matching_error": 7.238103468467537,
+    "morphing_distance": 20.05714701366018,
+    "procrustes_distance": 17.56010865343474,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-1733",
+    "template_matching_error": 9.158256483882912,
+    "morphing_distance": 12.640943168494744,
+    "procrustes_distance": 11.123994393950735,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1092",
+    "template_matching_error": 7.266412695934822,
+    "morphing_distance": 24.365389431138496,
+    "procrustes_distance": 29.27790314159458,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-989",
+    "template_matching_error": 7.57829549271541,
+    "morphing_distance": 100.87705908701737,
+    "procrustes_distance": 57.793854283526706,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2881",
+    "template_matching_error": 5.2891387420847344,
+    "morphing_distance": 11.833625506135723,
+    "procrustes_distance": 13.96843897981642,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-797",
+    "template_matching_error": 6.030840693558553,
+    "morphing_distance": 31.381289165037135,
+    "procrustes_distance": 11.271210750443307,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-1979",
+    "template_matching_error": 4.383400721241184,
+    "morphing_distance": 27.759147816214263,
+    "procrustes_distance": 22.560030461524622,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-501",
+    "template_matching_error": 4.7555490324172185,
+    "morphing_distance": 19.19057460338173,
+    "procrustes_distance": 13.198197868773109,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-4178",
+    "template_matching_error": 4.423077623378925,
+    "morphing_distance": 17.391236374509276,
+    "procrustes_distance": 25.74315710125417,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2025",
+    "template_matching_error": 4.916518961391843,
+    "morphing_distance": 14.839311469961721,
+    "procrustes_distance": 11.374508589566425,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3583",
+    "template_matching_error": 5.427459367867475,
+    "morphing_distance": 27.29497155855703,
+    "procrustes_distance": 22.792504789698803,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-922",
+    "template_matching_error": 6.046160608405681,
+    "morphing_distance": 21.175015393560432,
+    "procrustes_distance": 23.29083729175737,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-881",
+    "template_matching_error": 6.164528234618659,
+    "morphing_distance": 28.97959457587653,
+    "procrustes_distance": 14.212786188598653,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-1204",
+    "template_matching_error": 6.390463173571591,
+    "morphing_distance": 23.107925989653715,
+    "procrustes_distance": 17.71233701228405,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-2876",
+    "template_matching_error": 7.221603255419352,
+    "morphing_distance": 28.17072360344238,
+    "procrustes_distance": 25.29052568304459,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-9875",
+    "template_matching_error": 7.096245839815968,
+    "morphing_distance": 18.792203249264468,
+    "procrustes_distance": 10.347612717286163,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3776",
+    "template_matching_error": 5.594404040223285,
+    "morphing_distance": 18.327558886833106,
+    "procrustes_distance": 16.860820401854326,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-799",
+    "template_matching_error": 6.511427517220155,
+    "morphing_distance": 19.953587210476712,
+    "procrustes_distance": 19.35084255896197,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-135",
+    "template_matching_error": 4.926279690080668,
+    "morphing_distance": 17.79924064243898,
+    "procrustes_distance": 14.064998049034404,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-444",
+    "template_matching_error": 4.519286015365424,
+    "morphing_distance": 24.004637512067863,
+    "procrustes_distance": 20.471863027314328,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-263",
+    "template_matching_error": 4.48885724370134,
+    "morphing_distance": 10.411976401436032,
+    "procrustes_distance": 6.230854651686184,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-101",
+    "template_matching_error": 5.216239186682614,
+    "morphing_distance": 47.00525463237786,
+    "procrustes_distance": 8.834972918815891,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-1907",
+    "template_matching_error": 6.279473437416958,
+    "morphing_distance": 26.49126535219955,
+    "procrustes_distance": 17.36206667011911,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-3087",
+    "template_matching_error": 3.900665884892958,
+    "morphing_distance": 22.417210673952027,
+    "procrustes_distance": 20.618385162409528,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-217",
+    "template_matching_error": 5.318763497085978,
+    "morphing_distance": 18.78422658705782,
+    "procrustes_distance": 26.577413417346097,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-73",
+    "template_matching_error": 5.976767275749366,
+    "morphing_distance": 19.01150460073053,
+    "procrustes_distance": 16.6136997749821,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "COVID-2948",
+    "template_matching_error": 7.805434321350945,
+    "morphing_distance": 56.00639475931362,
+    "procrustes_distance": 42.796620293267985,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-3351",
+    "template_matching_error": 6.77939196479459,
+    "morphing_distance": 32.03276222839507,
+    "procrustes_distance": 17.53910765560702,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-679",
+    "template_matching_error": 6.305731278360549,
+    "morphing_distance": 14.281079430755879,
+    "procrustes_distance": 10.572883424493535,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Viral Pneumonia-456",
+    "template_matching_error": 5.871907893893578,
+    "morphing_distance": 18.516151712079612,
+    "procrustes_distance": 6.634534398274286,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  },
+  {
+    "image_name": "Normal-7332",
+    "template_matching_error": 5.889452119156369,
+    "morphing_distance": 22.15770454425666,
+    "procrustes_distance": 10.582320005280348,
+    "min_triangle_angle": 10.023462678410231,
+    "success": true
+  }
+]

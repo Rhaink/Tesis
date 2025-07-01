@@ -1,0 +1,1188 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>ASM-Style Morphing Results - All Test Images</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .header { background-color: #f0f0f0; padding: 20px; margin-bottom: 20px; }
+            .image-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 15px; }
+            .image-item { border: 2px solid #ddd; padding: 15px; text-align: center; border-radius: 8px; }
+            .covid { background-color: #ffe6e6; border-color: #ffaaaa; }
+            .normal { background-color: #e6ffe6; border-color: #aaffaa; }
+            .viral { background-color: #e6f3ff; border-color: #aaddff; }
+            img { max-width: 100%; height: auto; border-radius: 4px; }
+            .stats { display: flex; justify-content: space-around; margin: 20px 0; }
+            .stat-box { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+            h1 { color: #333; margin: 0; }
+            h2 { color: #666; margin: 10px 0; }
+            .pathology-tag { font-weight: bold; font-size: 1.1em; margin-bottom: 5px; }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <h1>🫁 ASM-Style Morphing Results: Complete Test Set</h1>
+            <h2>Pipeline: Image → Template Matching Landmarks → Delaunay Triangulation → Warp to Canonical Shape</h2>
+        </div>
+        
+        <div class="stats">
+            <div class="stat-box">
+                <h3>📊 Processing Statistics</h3>
+                <p><strong>Total Images:</strong> 159</p>
+                <p><strong>Success Rate:</strong> 100%</p>
+            </div>
+            <div class="stat-box">
+                <h3>🎯 Template Matching</h3>
+                <p><strong>Average Error:</strong> 5.63 ± 1.03 pixels</p>
+                <p><strong>Best Result:</strong> 3.41 pixels</p>
+            </div>
+            <div class="stat-box">
+                <h3>🔄 Morphing Quality</h3>
+                <p><strong>Mean Distance:</strong> 23.3 ± 12.1 pixels</p>
+                <p><strong>Anatomical Accuracy:</strong> Preserved</p>
+            </div>
+        </div>
+        
+        <div class="image-grid">
+    
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#001: COVID-3519</h4>
+                <p><strong>TM Error:</strong> 5.08px | <strong>Morph Distance:</strong> 17.3px</p>
+                <img src="COVID_001_COVID-3519.png" alt="COVID-3519" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#002: Normal-3173</h4>
+                <p><strong>TM Error:</strong> 5.94px | <strong>Morph Distance:</strong> 15.3px</p>
+                <img src="Normal_002_Normal-3173.png" alt="Normal-3173" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#003: Viral Pneumonia-761</h4>
+                <p><strong>TM Error:</strong> 5.93px | <strong>Morph Distance:</strong> 26.6px</p>
+                <img src="Viral_Pneumonia_003_Viral Pneumonia-761.png" alt="Viral Pneumonia-761" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#004: Viral Pneumonia-707</h4>
+                <p><strong>TM Error:</strong> 5.39px | <strong>Morph Distance:</strong> 17.0px</p>
+                <img src="Viral_Pneumonia_004_Viral Pneumonia-707.png" alt="Viral Pneumonia-707" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#005: Viral Pneumonia-1327</h4>
+                <p><strong>TM Error:</strong> 6.27px | <strong>Morph Distance:</strong> 20.4px</p>
+                <img src="Viral_Pneumonia_005_Viral Pneumonia-1327.png" alt="Viral Pneumonia-1327" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#006: Viral Pneumonia-993</h4>
+                <p><strong>TM Error:</strong> 5.96px | <strong>Morph Distance:</strong> 15.3px</p>
+                <img src="Viral_Pneumonia_006_Viral Pneumonia-993.png" alt="Viral Pneumonia-993" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#007: Normal-4507</h4>
+                <p><strong>TM Error:</strong> 5.81px | <strong>Morph Distance:</strong> 15.3px</p>
+                <img src="Normal_007_Normal-4507.png" alt="Normal-4507" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#008: COVID-2072</h4>
+                <p><strong>TM Error:</strong> 4.83px | <strong>Morph Distance:</strong> 22.1px</p>
+                <img src="COVID_008_COVID-2072.png" alt="COVID-2072" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#009: Normal-10078</h4>
+                <p><strong>TM Error:</strong> 5.55px | <strong>Morph Distance:</strong> 27.9px</p>
+                <img src="Normal_009_Normal-10078.png" alt="Normal-10078" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#010: Normal-9298</h4>
+                <p><strong>TM Error:</strong> 4.90px | <strong>Morph Distance:</strong> 35.8px</p>
+                <img src="Normal_010_Normal-9298.png" alt="Normal-9298" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#011: Viral Pneumonia-856</h4>
+                <p><strong>TM Error:</strong> 4.02px | <strong>Morph Distance:</strong> 29.8px</p>
+                <img src="Viral_Pneumonia_011_Viral Pneumonia-856.png" alt="Viral Pneumonia-856" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#012: Normal-4484</h4>
+                <p><strong>TM Error:</strong> 4.87px | <strong>Morph Distance:</strong> 21.6px</p>
+                <img src="Normal_012_Normal-4484.png" alt="Normal-4484" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#013: Viral Pneumonia-889</h4>
+                <p><strong>TM Error:</strong> 5.23px | <strong>Morph Distance:</strong> 33.8px</p>
+                <img src="Viral_Pneumonia_013_Viral Pneumonia-889.png" alt="Viral Pneumonia-889" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#014: Normal-2007</h4>
+                <p><strong>TM Error:</strong> 5.50px | <strong>Morph Distance:</strong> 53.1px</p>
+                <img src="Normal_014_Normal-2007.png" alt="Normal-2007" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#015: Viral Pneumonia-335</h4>
+                <p><strong>TM Error:</strong> 6.23px | <strong>Morph Distance:</strong> 18.5px</p>
+                <img src="Viral_Pneumonia_015_Viral Pneumonia-335.png" alt="Viral Pneumonia-335" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#016: Normal-3691</h4>
+                <p><strong>TM Error:</strong> 5.21px | <strong>Morph Distance:</strong> 17.5px</p>
+                <img src="Normal_016_Normal-3691.png" alt="Normal-3691" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#017: COVID-2606</h4>
+                <p><strong>TM Error:</strong> 6.83px | <strong>Morph Distance:</strong> 14.5px</p>
+                <img src="COVID_017_COVID-2606.png" alt="COVID-2606" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#018: Normal-5829</h4>
+                <p><strong>TM Error:</strong> 5.87px | <strong>Morph Distance:</strong> 23.7px</p>
+                <img src="Normal_018_Normal-5829.png" alt="Normal-5829" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#019: Normal-3720</h4>
+                <p><strong>TM Error:</strong> 7.03px | <strong>Morph Distance:</strong> 21.5px</p>
+                <img src="Normal_019_Normal-3720.png" alt="Normal-3720" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#020: COVID-642</h4>
+                <p><strong>TM Error:</strong> 6.90px | <strong>Morph Distance:</strong> 14.4px</p>
+                <img src="COVID_020_COVID-642.png" alt="COVID-642" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#021: Normal-3805</h4>
+                <p><strong>TM Error:</strong> 5.72px | <strong>Morph Distance:</strong> 14.1px</p>
+                <img src="Normal_021_Normal-3805.png" alt="Normal-3805" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#022: Normal-4448</h4>
+                <p><strong>TM Error:</strong> 4.59px | <strong>Morph Distance:</strong> 36.3px</p>
+                <img src="Normal_022_Normal-4448.png" alt="Normal-4448" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#023: Normal-1891</h4>
+                <p><strong>TM Error:</strong> 3.76px | <strong>Morph Distance:</strong> 10.2px</p>
+                <img src="Normal_023_Normal-1891.png" alt="Normal-1891" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#024: Normal-8732</h4>
+                <p><strong>TM Error:</strong> 5.50px | <strong>Morph Distance:</strong> 29.1px</p>
+                <img src="Normal_024_Normal-8732.png" alt="Normal-8732" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#025: Viral Pneumonia-401</h4>
+                <p><strong>TM Error:</strong> 6.15px | <strong>Morph Distance:</strong> 32.0px</p>
+                <img src="Viral_Pneumonia_025_Viral Pneumonia-401.png" alt="Viral Pneumonia-401" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#026: COVID-2358</h4>
+                <p><strong>TM Error:</strong> 5.90px | <strong>Morph Distance:</strong> 18.2px</p>
+                <img src="COVID_026_COVID-2358.png" alt="COVID-2358" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#027: Normal-10105</h4>
+                <p><strong>TM Error:</strong> 6.61px | <strong>Morph Distance:</strong> 12.1px</p>
+                <img src="Normal_027_Normal-10105.png" alt="Normal-10105" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#028: COVID-2657</h4>
+                <p><strong>TM Error:</strong> 6.26px | <strong>Morph Distance:</strong> 33.3px</p>
+                <img src="COVID_028_COVID-2657.png" alt="COVID-2657" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#029: Viral Pneumonia-745</h4>
+                <p><strong>TM Error:</strong> 7.01px | <strong>Morph Distance:</strong> 23.7px</p>
+                <img src="Viral_Pneumonia_029_Viral Pneumonia-745.png" alt="Viral Pneumonia-745" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#030: Normal-6322</h4>
+                <p><strong>TM Error:</strong> 6.08px | <strong>Morph Distance:</strong> 20.0px</p>
+                <img src="Normal_030_Normal-6322.png" alt="Normal-6322" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#031: Normal-551</h4>
+                <p><strong>TM Error:</strong> 6.02px | <strong>Morph Distance:</strong> 69.1px</p>
+                <img src="Normal_031_Normal-551.png" alt="Normal-551" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#032: COVID-2536</h4>
+                <p><strong>TM Error:</strong> 5.98px | <strong>Morph Distance:</strong> 52.4px</p>
+                <img src="COVID_032_COVID-2536.png" alt="COVID-2536" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#033: COVID-2169</h4>
+                <p><strong>TM Error:</strong> 4.64px | <strong>Morph Distance:</strong> 16.7px</p>
+                <img src="COVID_033_COVID-2169.png" alt="COVID-2169" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#034: Normal-5329</h4>
+                <p><strong>TM Error:</strong> 5.13px | <strong>Morph Distance:</strong> 9.0px</p>
+                <img src="Normal_034_Normal-5329.png" alt="Normal-5329" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#035: Normal-2258</h4>
+                <p><strong>TM Error:</strong> 4.91px | <strong>Morph Distance:</strong> 22.8px</p>
+                <img src="Normal_035_Normal-2258.png" alt="Normal-2258" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#036: COVID-2638</h4>
+                <p><strong>TM Error:</strong> 3.67px | <strong>Morph Distance:</strong> 26.7px</p>
+                <img src="COVID_036_COVID-2638.png" alt="COVID-2638" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#037: Normal-9248</h4>
+                <p><strong>TM Error:</strong> 5.62px | <strong>Morph Distance:</strong> 13.4px</p>
+                <img src="Normal_037_Normal-9248.png" alt="Normal-9248" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#038: Viral Pneumonia-95</h4>
+                <p><strong>TM Error:</strong> 4.15px | <strong>Morph Distance:</strong> 31.1px</p>
+                <img src="Viral_Pneumonia_038_Viral Pneumonia-95.png" alt="Viral Pneumonia-95" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#039: Viral Pneumonia-675</h4>
+                <p><strong>TM Error:</strong> 6.11px | <strong>Morph Distance:</strong> 19.8px</p>
+                <img src="Viral_Pneumonia_039_Viral Pneumonia-675.png" alt="Viral Pneumonia-675" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#040: Viral Pneumonia-901</h4>
+                <p><strong>TM Error:</strong> 6.48px | <strong>Morph Distance:</strong> 17.0px</p>
+                <img src="Viral_Pneumonia_040_Viral Pneumonia-901.png" alt="Viral Pneumonia-901" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#041: COVID-3090</h4>
+                <p><strong>TM Error:</strong> 6.30px | <strong>Morph Distance:</strong> 11.8px</p>
+                <img src="COVID_041_COVID-3090.png" alt="COVID-3090" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#042: Normal-9934</h4>
+                <p><strong>TM Error:</strong> 5.89px | <strong>Morph Distance:</strong> 23.5px</p>
+                <img src="Normal_042_Normal-9934.png" alt="Normal-9934" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#043: Viral Pneumonia-943</h4>
+                <p><strong>TM Error:</strong> 7.55px | <strong>Morph Distance:</strong> 14.3px</p>
+                <img src="Viral_Pneumonia_043_Viral Pneumonia-943.png" alt="Viral Pneumonia-943" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#044: COVID-3321</h4>
+                <p><strong>TM Error:</strong> 6.17px | <strong>Morph Distance:</strong> 32.4px</p>
+                <img src="COVID_044_COVID-3321.png" alt="COVID-3321" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#045: COVID-2829</h4>
+                <p><strong>TM Error:</strong> 6.53px | <strong>Morph Distance:</strong> 45.8px</p>
+                <img src="COVID_045_COVID-2829.png" alt="COVID-2829" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#046: Normal-7192</h4>
+                <p><strong>TM Error:</strong> 4.77px | <strong>Morph Distance:</strong> 38.1px</p>
+                <img src="Normal_046_Normal-7192.png" alt="Normal-7192" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#047: Normal-9174</h4>
+                <p><strong>TM Error:</strong> 3.72px | <strong>Morph Distance:</strong> 20.3px</p>
+                <img src="Normal_047_Normal-9174.png" alt="Normal-9174" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#048: COVID-18</h4>
+                <p><strong>TM Error:</strong> 5.04px | <strong>Morph Distance:</strong> 21.7px</p>
+                <img src="COVID_048_COVID-18.png" alt="COVID-18" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#049: Normal-9309</h4>
+                <p><strong>TM Error:</strong> 4.93px | <strong>Morph Distance:</strong> 14.3px</p>
+                <img src="Normal_049_Normal-9309.png" alt="Normal-9309" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#050: Viral Pneumonia-1100</h4>
+                <p><strong>TM Error:</strong> 4.16px | <strong>Morph Distance:</strong> 15.6px</p>
+                <img src="Viral_Pneumonia_050_Viral Pneumonia-1100.png" alt="Viral Pneumonia-1100" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#051: COVID-2542</h4>
+                <p><strong>TM Error:</strong> 4.87px | <strong>Morph Distance:</strong> 23.1px</p>
+                <img src="COVID_051_COVID-2542.png" alt="COVID-2542" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#052: Normal-4470</h4>
+                <p><strong>TM Error:</strong> 5.19px | <strong>Morph Distance:</strong> 27.8px</p>
+                <img src="Normal_052_Normal-4470.png" alt="Normal-4470" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#053: Viral Pneumonia-64</h4>
+                <p><strong>TM Error:</strong> 7.77px | <strong>Morph Distance:</strong> 19.6px</p>
+                <img src="Viral_Pneumonia_053_Viral Pneumonia-64.png" alt="Viral Pneumonia-64" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#054: Normal-8317</h4>
+                <p><strong>TM Error:</strong> 6.63px | <strong>Morph Distance:</strong> 11.4px</p>
+                <img src="Normal_054_Normal-8317.png" alt="Normal-8317" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#055: Normal-1588</h4>
+                <p><strong>TM Error:</strong> 6.64px | <strong>Morph Distance:</strong> 38.7px</p>
+                <img src="Normal_055_Normal-1588.png" alt="Normal-1588" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#056: COVID-1137</h4>
+                <p><strong>TM Error:</strong> 7.17px | <strong>Morph Distance:</strong> 29.1px</p>
+                <img src="COVID_056_COVID-1137.png" alt="COVID-1137" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#057: COVID-3593</h4>
+                <p><strong>TM Error:</strong> 5.13px | <strong>Morph Distance:</strong> 22.1px</p>
+                <img src="COVID_057_COVID-3593.png" alt="COVID-3593" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#058: Viral Pneumonia-80</h4>
+                <p><strong>TM Error:</strong> 5.69px | <strong>Morph Distance:</strong> 28.6px</p>
+                <img src="Viral_Pneumonia_058_Viral Pneumonia-80.png" alt="Viral Pneumonia-80" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#059: Viral Pneumonia-623</h4>
+                <p><strong>TM Error:</strong> 5.33px | <strong>Morph Distance:</strong> 35.4px</p>
+                <img src="Viral_Pneumonia_059_Viral Pneumonia-623.png" alt="Viral Pneumonia-623" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#060: Normal-395</h4>
+                <p><strong>TM Error:</strong> 4.32px | <strong>Morph Distance:</strong> 15.3px</p>
+                <img src="Normal_060_Normal-395.png" alt="Normal-395" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#061: Normal-2299</h4>
+                <p><strong>TM Error:</strong> 3.61px | <strong>Morph Distance:</strong> 12.9px</p>
+                <img src="Normal_061_Normal-2299.png" alt="Normal-2299" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#062: Normal-789</h4>
+                <p><strong>TM Error:</strong> 5.27px | <strong>Morph Distance:</strong> 15.4px</p>
+                <img src="Normal_062_Normal-789.png" alt="Normal-789" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#063: Normal-7635</h4>
+                <p><strong>TM Error:</strong> 4.62px | <strong>Morph Distance:</strong> 11.3px</p>
+                <img src="Normal_063_Normal-7635.png" alt="Normal-7635" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#064: COVID-3492</h4>
+                <p><strong>TM Error:</strong> 5.79px | <strong>Morph Distance:</strong> 13.2px</p>
+                <img src="COVID_064_COVID-3492.png" alt="COVID-3492" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#065: Normal-1088</h4>
+                <p><strong>TM Error:</strong> 6.66px | <strong>Morph Distance:</strong> 12.8px</p>
+                <img src="Normal_065_Normal-1088.png" alt="Normal-1088" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#066: Normal-4297</h4>
+                <p><strong>TM Error:</strong> 5.44px | <strong>Morph Distance:</strong> 17.9px</p>
+                <img src="Normal_066_Normal-4297.png" alt="Normal-4297" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#067: Viral Pneumonia-1057</h4>
+                <p><strong>TM Error:</strong> 6.98px | <strong>Morph Distance:</strong> 11.7px</p>
+                <img src="Viral_Pneumonia_067_Viral Pneumonia-1057.png" alt="Viral Pneumonia-1057" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#068: Viral Pneumonia-1043</h4>
+                <p><strong>TM Error:</strong> 6.60px | <strong>Morph Distance:</strong> 13.8px</p>
+                <img src="Viral_Pneumonia_068_Viral Pneumonia-1043.png" alt="Viral Pneumonia-1043" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#069: Viral Pneumonia-1144</h4>
+                <p><strong>TM Error:</strong> 6.21px | <strong>Morph Distance:</strong> 35.9px</p>
+                <img src="Viral_Pneumonia_069_Viral Pneumonia-1144.png" alt="Viral Pneumonia-1144" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#070: Viral Pneumonia-220</h4>
+                <p><strong>TM Error:</strong> 5.76px | <strong>Morph Distance:</strong> 12.0px</p>
+                <img src="Viral_Pneumonia_070_Viral Pneumonia-220.png" alt="Viral Pneumonia-220" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#071: Normal-8879</h4>
+                <p><strong>TM Error:</strong> 5.12px | <strong>Morph Distance:</strong> 19.8px</p>
+                <img src="Normal_071_Normal-8879.png" alt="Normal-8879" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#072: Normal-3716</h4>
+                <p><strong>TM Error:</strong> 5.51px | <strong>Morph Distance:</strong> 39.6px</p>
+                <img src="Normal_072_Normal-3716.png" alt="Normal-3716" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#073: Normal-9419</h4>
+                <p><strong>TM Error:</strong> 5.23px | <strong>Morph Distance:</strong> 22.9px</p>
+                <img src="Normal_073_Normal-9419.png" alt="Normal-9419" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#074: COVID-3099</h4>
+                <p><strong>TM Error:</strong> 4.48px | <strong>Morph Distance:</strong> 15.4px</p>
+                <img src="COVID_074_COVID-3099.png" alt="COVID-3099" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#075: Viral Pneumonia-1199</h4>
+                <p><strong>TM Error:</strong> 4.45px | <strong>Morph Distance:</strong> 42.4px</p>
+                <img src="Viral_Pneumonia_075_Viral Pneumonia-1199.png" alt="Viral Pneumonia-1199" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#076: Normal-7573</h4>
+                <p><strong>TM Error:</strong> 4.52px | <strong>Morph Distance:</strong> 38.1px</p>
+                <img src="Normal_076_Normal-7573.png" alt="Normal-7573" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#077: Normal-10111</h4>
+                <p><strong>TM Error:</strong> 7.12px | <strong>Morph Distance:</strong> 55.7px</p>
+                <img src="Normal_077_Normal-10111.png" alt="Normal-10111" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#078: COVID-421</h4>
+                <p><strong>TM Error:</strong> 7.30px | <strong>Morph Distance:</strong> 29.4px</p>
+                <img src="COVID_078_COVID-421.png" alt="COVID-421" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#079: COVID-605</h4>
+                <p><strong>TM Error:</strong> 6.62px | <strong>Morph Distance:</strong> 21.2px</p>
+                <img src="COVID_079_COVID-605.png" alt="COVID-605" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#080: COVID-1387</h4>
+                <p><strong>TM Error:</strong> 6.28px | <strong>Morph Distance:</strong> 10.8px</p>
+                <img src="COVID_080_COVID-1387.png" alt="COVID-1387" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#081: Normal-4120</h4>
+                <p><strong>TM Error:</strong> 4.43px | <strong>Morph Distance:</strong> 37.8px</p>
+                <img src="Normal_081_Normal-4120.png" alt="Normal-4120" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#082: COVID-3380</h4>
+                <p><strong>TM Error:</strong> 4.69px | <strong>Morph Distance:</strong> 22.7px</p>
+                <img src="COVID_082_COVID-3380.png" alt="COVID-3380" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#083: COVID-709</h4>
+                <p><strong>TM Error:</strong> 5.39px | <strong>Morph Distance:</strong> 24.6px</p>
+                <img src="COVID_083_COVID-709.png" alt="COVID-709" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#084: COVID-334</h4>
+                <p><strong>TM Error:</strong> 4.88px | <strong>Morph Distance:</strong> 17.2px</p>
+                <img src="COVID_084_COVID-334.png" alt="COVID-334" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#085: Normal-2281</h4>
+                <p><strong>TM Error:</strong> 4.83px | <strong>Morph Distance:</strong> 18.5px</p>
+                <img src="Normal_085_Normal-2281.png" alt="Normal-2281" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#086: Viral Pneumonia-232</h4>
+                <p><strong>TM Error:</strong> 4.32px | <strong>Morph Distance:</strong> 18.4px</p>
+                <img src="Viral_Pneumonia_086_Viral Pneumonia-232.png" alt="Viral Pneumonia-232" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#087: Normal-1582</h4>
+                <p><strong>TM Error:</strong> 5.71px | <strong>Morph Distance:</strong> 11.0px</p>
+                <img src="Normal_087_Normal-1582.png" alt="Normal-1582" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#088: Viral Pneumonia-93</h4>
+                <p><strong>TM Error:</strong> 5.41px | <strong>Morph Distance:</strong> 33.8px</p>
+                <img src="Viral_Pneumonia_088_Viral Pneumonia-93.png" alt="Viral Pneumonia-93" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#089: COVID-720</h4>
+                <p><strong>TM Error:</strong> 5.45px | <strong>Morph Distance:</strong> 27.3px</p>
+                <img src="COVID_089_COVID-720.png" alt="COVID-720" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#090: Viral Pneumonia-1161</h4>
+                <p><strong>TM Error:</strong> 6.56px | <strong>Morph Distance:</strong> 25.0px</p>
+                <img src="Viral_Pneumonia_090_Viral Pneumonia-1161.png" alt="Viral Pneumonia-1161" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#091: Viral Pneumonia-528</h4>
+                <p><strong>TM Error:</strong> 6.81px | <strong>Morph Distance:</strong> 35.0px</p>
+                <img src="Viral_Pneumonia_091_Viral Pneumonia-528.png" alt="Viral Pneumonia-528" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#092: Viral Pneumonia-844</h4>
+                <p><strong>TM Error:</strong> 5.27px | <strong>Morph Distance:</strong> 36.3px</p>
+                <img src="Viral_Pneumonia_092_Viral Pneumonia-844.png" alt="Viral Pneumonia-844" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#093: Normal-52</h4>
+                <p><strong>TM Error:</strong> 7.04px | <strong>Morph Distance:</strong> 23.0px</p>
+                <img src="Normal_093_Normal-52.png" alt="Normal-52" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#094: Viral Pneumonia-1220</h4>
+                <p><strong>TM Error:</strong> 6.49px | <strong>Morph Distance:</strong> 30.8px</p>
+                <img src="Viral_Pneumonia_094_Viral Pneumonia-1220.png" alt="Viral Pneumonia-1220" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#095: COVID-1560</h4>
+                <p><strong>TM Error:</strong> 4.88px | <strong>Morph Distance:</strong> 16.5px</p>
+                <img src="COVID_095_COVID-1560.png" alt="COVID-1560" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#096: Normal-4498</h4>
+                <p><strong>TM Error:</strong> 5.39px | <strong>Morph Distance:</strong> 29.5px</p>
+                <img src="Normal_096_Normal-4498.png" alt="Normal-4498" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#097: COVID-94</h4>
+                <p><strong>TM Error:</strong> 4.56px | <strong>Morph Distance:</strong> 13.9px</p>
+                <img src="COVID_097_COVID-94.png" alt="COVID-94" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#098: Viral Pneumonia-207</h4>
+                <p><strong>TM Error:</strong> 3.61px | <strong>Morph Distance:</strong> 16.7px</p>
+                <img src="Viral_Pneumonia_098_Viral Pneumonia-207.png" alt="Viral Pneumonia-207" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#099: Normal-5289</h4>
+                <p><strong>TM Error:</strong> 5.21px | <strong>Morph Distance:</strong> 16.2px</p>
+                <img src="Normal_099_Normal-5289.png" alt="Normal-5289" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#100: Normal-9797</h4>
+                <p><strong>TM Error:</strong> 4.50px | <strong>Morph Distance:</strong> 8.0px</p>
+                <img src="Normal_100_Normal-9797.png" alt="Normal-9797" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#101: Normal-647</h4>
+                <p><strong>TM Error:</strong> 5.05px | <strong>Morph Distance:</strong> 17.9px</p>
+                <img src="Normal_101_Normal-647.png" alt="Normal-647" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#102: Normal-3580</h4>
+                <p><strong>TM Error:</strong> 4.33px | <strong>Morph Distance:</strong> 15.2px</p>
+                <img src="Normal_102_Normal-3580.png" alt="Normal-3580" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#103: Normal-6560</h4>
+                <p><strong>TM Error:</strong> 5.27px | <strong>Morph Distance:</strong> 27.1px</p>
+                <img src="Normal_103_Normal-6560.png" alt="Normal-6560" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#104: Viral Pneumonia-100</h4>
+                <p><strong>TM Error:</strong> 6.89px | <strong>Morph Distance:</strong> 11.9px</p>
+                <img src="Viral_Pneumonia_104_Viral Pneumonia-100.png" alt="Viral Pneumonia-100" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#105: Normal-9112</h4>
+                <p><strong>TM Error:</strong> 6.31px | <strong>Morph Distance:</strong> 20.0px</p>
+                <img src="Normal_105_Normal-9112.png" alt="Normal-9112" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#106: Viral Pneumonia-1260</h4>
+                <p><strong>TM Error:</strong> 7.19px | <strong>Morph Distance:</strong> 29.8px</p>
+                <img src="Viral_Pneumonia_106_Viral Pneumonia-1260.png" alt="Viral Pneumonia-1260" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#107: COVID-526</h4>
+                <p><strong>TM Error:</strong> 5.85px | <strong>Morph Distance:</strong> 8.7px</p>
+                <img src="COVID_107_COVID-526.png" alt="COVID-526" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#108: Normal-4284</h4>
+                <p><strong>TM Error:</strong> 5.94px | <strong>Morph Distance:</strong> 13.4px</p>
+                <img src="Normal_108_Normal-4284.png" alt="Normal-4284" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#109: Normal-30</h4>
+                <p><strong>TM Error:</strong> 5.28px | <strong>Morph Distance:</strong> 17.7px</p>
+                <img src="Normal_109_Normal-30.png" alt="Normal-30" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#110: Viral Pneumonia-1321</h4>
+                <p><strong>TM Error:</strong> 3.54px | <strong>Morph Distance:</strong> 9.9px</p>
+                <img src="Viral_Pneumonia_110_Viral Pneumonia-1321.png" alt="Viral Pneumonia-1321" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#111: Normal-9898</h4>
+                <p><strong>TM Error:</strong> 3.41px | <strong>Morph Distance:</strong> 40.2px</p>
+                <img src="Normal_111_Normal-9898.png" alt="Normal-9898" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#112: Normal-1756</h4>
+                <p><strong>TM Error:</strong> 5.39px | <strong>Morph Distance:</strong> 19.0px</p>
+                <img src="Normal_112_Normal-1756.png" alt="Normal-1756" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#113: COVID-3263</h4>
+                <p><strong>TM Error:</strong> 5.12px | <strong>Morph Distance:</strong> 17.0px</p>
+                <img src="COVID_113_COVID-3263.png" alt="COVID-3263" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#114: Normal-7608</h4>
+                <p><strong>TM Error:</strong> 5.66px | <strong>Morph Distance:</strong> 14.6px</p>
+                <img src="Normal_114_Normal-7608.png" alt="Normal-7608" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#115: COVID-1970</h4>
+                <p><strong>TM Error:</strong> 5.27px | <strong>Morph Distance:</strong> 25.3px</p>
+                <img src="COVID_115_COVID-1970.png" alt="COVID-1970" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#116: Normal-9836</h4>
+                <p><strong>TM Error:</strong> 5.50px | <strong>Morph Distance:</strong> 9.4px</p>
+                <img src="Normal_116_Normal-9836.png" alt="Normal-9836" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#117: Normal-2575</h4>
+                <p><strong>TM Error:</strong> 7.71px | <strong>Morph Distance:</strong> 20.5px</p>
+                <img src="Normal_117_Normal-2575.png" alt="Normal-2575" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#118: Normal-2865</h4>
+                <p><strong>TM Error:</strong> 7.13px | <strong>Morph Distance:</strong> 16.9px</p>
+                <img src="Normal_118_Normal-2865.png" alt="Normal-2865" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#119: Viral Pneumonia-424</h4>
+                <p><strong>TM Error:</strong> 5.17px | <strong>Morph Distance:</strong> 23.4px</p>
+                <img src="Viral_Pneumonia_119_Viral Pneumonia-424.png" alt="Viral Pneumonia-424" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#120: COVID-2174</h4>
+                <p><strong>TM Error:</strong> 5.72px | <strong>Morph Distance:</strong> 20.7px</p>
+                <img src="COVID_120_COVID-2174.png" alt="COVID-2174" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#121: Normal-9200</h4>
+                <p><strong>TM Error:</strong> 6.37px | <strong>Morph Distance:</strong> 13.1px</p>
+                <img src="Normal_121_Normal-9200.png" alt="Normal-9200" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#122: Viral Pneumonia-634</h4>
+                <p><strong>TM Error:</strong> 4.65px | <strong>Morph Distance:</strong> 12.4px</p>
+                <img src="Viral_Pneumonia_122_Viral Pneumonia-634.png" alt="Viral Pneumonia-634" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#123: Viral Pneumonia-1255</h4>
+                <p><strong>TM Error:</strong> 3.57px | <strong>Morph Distance:</strong> 13.2px</p>
+                <img src="Viral_Pneumonia_123_Viral Pneumonia-1255.png" alt="Viral Pneumonia-1255" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#124: COVID-3154</h4>
+                <p><strong>TM Error:</strong> 5.53px | <strong>Morph Distance:</strong> 15.9px</p>
+                <img src="COVID_124_COVID-3154.png" alt="COVID-3154" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#125: Normal-7178</h4>
+                <p><strong>TM Error:</strong> 4.84px | <strong>Morph Distance:</strong> 26.2px</p>
+                <img src="Normal_125_Normal-7178.png" alt="Normal-7178" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#126: Normal-5079</h4>
+                <p><strong>TM Error:</strong> 5.50px | <strong>Morph Distance:</strong> 38.1px</p>
+                <img src="Normal_126_Normal-5079.png" alt="Normal-5079" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#127: Normal-1943</h4>
+                <p><strong>TM Error:</strong> 4.78px | <strong>Morph Distance:</strong> 15.3px</p>
+                <img src="Normal_127_Normal-1943.png" alt="Normal-1943" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#128: COVID-902</h4>
+                <p><strong>TM Error:</strong> 6.72px | <strong>Morph Distance:</strong> 21.6px</p>
+                <img src="COVID_128_COVID-902.png" alt="COVID-902" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#129: Normal-599</h4>
+                <p><strong>TM Error:</strong> 7.24px | <strong>Morph Distance:</strong> 20.1px</p>
+                <img src="Normal_129_Normal-599.png" alt="Normal-599" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#130: COVID-1733</h4>
+                <p><strong>TM Error:</strong> 9.16px | <strong>Morph Distance:</strong> 12.6px</p>
+                <img src="COVID_130_COVID-1733.png" alt="COVID-1733" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#131: Viral Pneumonia-1092</h4>
+                <p><strong>TM Error:</strong> 7.27px | <strong>Morph Distance:</strong> 24.4px</p>
+                <img src="Viral_Pneumonia_131_Viral Pneumonia-1092.png" alt="Viral Pneumonia-1092" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#132: Viral Pneumonia-989</h4>
+                <p><strong>TM Error:</strong> 7.58px | <strong>Morph Distance:</strong> 100.9px</p>
+                <img src="Viral_Pneumonia_132_Viral Pneumonia-989.png" alt="Viral Pneumonia-989" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#133: Normal-2881</h4>
+                <p><strong>TM Error:</strong> 5.29px | <strong>Morph Distance:</strong> 11.8px</p>
+                <img src="Normal_133_Normal-2881.png" alt="Normal-2881" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#134: Viral Pneumonia-797</h4>
+                <p><strong>TM Error:</strong> 6.03px | <strong>Morph Distance:</strong> 31.4px</p>
+                <img src="Viral_Pneumonia_134_Viral Pneumonia-797.png" alt="Viral Pneumonia-797" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#135: Normal-1979</h4>
+                <p><strong>TM Error:</strong> 4.38px | <strong>Morph Distance:</strong> 27.8px</p>
+                <img src="Normal_135_Normal-1979.png" alt="Normal-1979" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#136: Viral Pneumonia-501</h4>
+                <p><strong>TM Error:</strong> 4.76px | <strong>Morph Distance:</strong> 19.2px</p>
+                <img src="Viral_Pneumonia_136_Viral Pneumonia-501.png" alt="Viral Pneumonia-501" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#137: Normal-4178</h4>
+                <p><strong>TM Error:</strong> 4.42px | <strong>Morph Distance:</strong> 17.4px</p>
+                <img src="Normal_137_Normal-4178.png" alt="Normal-4178" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#138: COVID-2025</h4>
+                <p><strong>TM Error:</strong> 4.92px | <strong>Morph Distance:</strong> 14.8px</p>
+                <img src="COVID_138_COVID-2025.png" alt="COVID-2025" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#139: Normal-3583</h4>
+                <p><strong>TM Error:</strong> 5.43px | <strong>Morph Distance:</strong> 27.3px</p>
+                <img src="Normal_139_Normal-3583.png" alt="Normal-3583" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#140: Normal-922</h4>
+                <p><strong>TM Error:</strong> 6.05px | <strong>Morph Distance:</strong> 21.2px</p>
+                <img src="Normal_140_Normal-922.png" alt="Normal-922" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#141: COVID-881</h4>
+                <p><strong>TM Error:</strong> 6.16px | <strong>Morph Distance:</strong> 29.0px</p>
+                <img src="COVID_141_COVID-881.png" alt="COVID-881" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#142: Viral Pneumonia-1204</h4>
+                <p><strong>TM Error:</strong> 6.39px | <strong>Morph Distance:</strong> 23.1px</p>
+                <img src="Viral_Pneumonia_142_Viral Pneumonia-1204.png" alt="Viral Pneumonia-1204" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#143: Normal-2876</h4>
+                <p><strong>TM Error:</strong> 7.22px | <strong>Morph Distance:</strong> 28.2px</p>
+                <img src="Normal_143_Normal-2876.png" alt="Normal-2876" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#144: Normal-9875</h4>
+                <p><strong>TM Error:</strong> 7.10px | <strong>Morph Distance:</strong> 18.8px</p>
+                <img src="Normal_144_Normal-9875.png" alt="Normal-9875" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#145: Normal-3776</h4>
+                <p><strong>TM Error:</strong> 5.59px | <strong>Morph Distance:</strong> 18.3px</p>
+                <img src="Normal_145_Normal-3776.png" alt="Normal-3776" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#146: COVID-799</h4>
+                <p><strong>TM Error:</strong> 6.51px | <strong>Morph Distance:</strong> 20.0px</p>
+                <img src="COVID_146_COVID-799.png" alt="COVID-799" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#147: Viral Pneumonia-135</h4>
+                <p><strong>TM Error:</strong> 4.93px | <strong>Morph Distance:</strong> 17.8px</p>
+                <img src="Viral_Pneumonia_147_Viral Pneumonia-135.png" alt="Viral Pneumonia-135" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#148: Viral Pneumonia-444</h4>
+                <p><strong>TM Error:</strong> 4.52px | <strong>Morph Distance:</strong> 24.0px</p>
+                <img src="Viral_Pneumonia_148_Viral Pneumonia-444.png" alt="Viral Pneumonia-444" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#149: Viral Pneumonia-263</h4>
+                <p><strong>TM Error:</strong> 4.49px | <strong>Morph Distance:</strong> 10.4px</p>
+                <img src="Viral_Pneumonia_149_Viral Pneumonia-263.png" alt="Viral Pneumonia-263" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#150: Viral Pneumonia-101</h4>
+                <p><strong>TM Error:</strong> 5.22px | <strong>Morph Distance:</strong> 47.0px</p>
+                <img src="Viral_Pneumonia_150_Viral Pneumonia-101.png" alt="Viral Pneumonia-101" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#151: COVID-1907</h4>
+                <p><strong>TM Error:</strong> 6.28px | <strong>Morph Distance:</strong> 26.5px</p>
+                <img src="COVID_151_COVID-1907.png" alt="COVID-1907" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#152: COVID-3087</h4>
+                <p><strong>TM Error:</strong> 3.90px | <strong>Morph Distance:</strong> 22.4px</p>
+                <img src="COVID_152_COVID-3087.png" alt="COVID-3087" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#153: Viral Pneumonia-217</h4>
+                <p><strong>TM Error:</strong> 5.32px | <strong>Morph Distance:</strong> 18.8px</p>
+                <img src="Viral_Pneumonia_153_Viral Pneumonia-217.png" alt="Viral Pneumonia-217" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#154: Viral Pneumonia-73</h4>
+                <p><strong>TM Error:</strong> 5.98px | <strong>Morph Distance:</strong> 19.0px</p>
+                <img src="Viral_Pneumonia_154_Viral Pneumonia-73.png" alt="Viral Pneumonia-73" loading="lazy">
+            </div>
+        
+            <div class="image-item covid">
+                <div class="pathology-tag">COVID</div>
+                <h4>#155: COVID-2948</h4>
+                <p><strong>TM Error:</strong> 7.81px | <strong>Morph Distance:</strong> 56.0px</p>
+                <img src="COVID_155_COVID-2948.png" alt="COVID-2948" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#156: Normal-3351</h4>
+                <p><strong>TM Error:</strong> 6.78px | <strong>Morph Distance:</strong> 32.0px</p>
+                <img src="Normal_156_Normal-3351.png" alt="Normal-3351" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#157: Viral Pneumonia-679</h4>
+                <p><strong>TM Error:</strong> 6.31px | <strong>Morph Distance:</strong> 14.3px</p>
+                <img src="Viral_Pneumonia_157_Viral Pneumonia-679.png" alt="Viral Pneumonia-679" loading="lazy">
+            </div>
+        
+            <div class="image-item viral">
+                <div class="pathology-tag">Viral Pneumonia</div>
+                <h4>#158: Viral Pneumonia-456</h4>
+                <p><strong>TM Error:</strong> 5.87px | <strong>Morph Distance:</strong> 18.5px</p>
+                <img src="Viral_Pneumonia_158_Viral Pneumonia-456.png" alt="Viral Pneumonia-456" loading="lazy">
+            </div>
+        
+            <div class="image-item normal">
+                <div class="pathology-tag">Normal</div>
+                <h4>#159: Normal-7332</h4>
+                <p><strong>TM Error:</strong> 5.89px | <strong>Morph Distance:</strong> 22.2px</p>
+                <img src="Normal_159_Normal-7332.png" alt="Normal-7332" loading="lazy">
+            </div>
+        
+        </div>
+        
+        <div class="stats" style="margin-top: 40px;">
+            <div class="stat-box">
+                <h3>📈 Dataset Distribution</h3>
+    <p><strong>COVID:</strong> 40 images</p><p><strong>Normal:</strong> 71 images</p><p><strong>Viral Pneumonia:</strong> 48 images</p>
+            </div>
+            <div class="stat-box">
+                <h3>🔬 Technical Details</h3>
+                <p><strong>Landmarks:</strong> 15 anatomical points</p>
+                <p><strong>Triangulation:</strong> Delaunay algorithm</p>
+                <p><strong>Morphing:</strong> Affine per-triangle warping</p>
+            </div>
+            <div class="stat-box">
+                <h3>💻 Implementation</h3>
+                <p><strong>Framework:</strong> Python + OpenCV</p>
+                <p><strong>Generated:</strong> Delaunay Morphing System</p>
+                <p><strong>Date:</strong> July 2025</p>
+            </div>
+        </div>
+        
+        <footer style="margin-top: 40px; text-align: center; color: #666; padding: 20px; background: #f9f9f9;">
+            <p><strong>🧬 Medical Image Analysis - ASM-Style Morphing with Template Matching Integration</strong></p>
+            <p>Each visualization shows: Original image with TM landmarks → Warped to canonical shape → Delaunay triangulation overlay</p>
+        </footer>
+    </body>
+    </html>
+    

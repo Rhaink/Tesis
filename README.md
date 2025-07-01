@@ -14,6 +14,19 @@ El repositorio está organizado en varias carpetas principales, cada una con un 
     *   `pulmones/models/`: Almacena los modelos ASM entrenados (forma y apariencia).
     *   `pulmones/results/`: Guarda los resultados de las evaluaciones y visualizaciones del modelo ASM.
 
+*   **`template_matching/`**: Implementación de Template Matching con PCA/Eigenpatches como método alternativo de detección de landmarks. Logra un error promedio de **5.63 ± 1.03 pixeles** en 159 imágenes de prueba.
+    *   `template_matching/src/core/`: Implementaciones del modelo de eigenpatches y predictor de landmarks multi-escala.
+    *   `template_matching/scripts/`: Scripts para entrenamiento, procesamiento e visualización interactiva.
+    *   `template_matching/models/`: Modelos entrenados de Template Matching.
+    *   `template_matching/results/`: Resultados de predicción y evaluación (`results_coordenadas_prueba_1.pkl`).
+    *   `template_matching/visualizations/`: Visualizaciones generadas para todas las imágenes de prueba.
+
+*   **`delaunay_morphing/`**: **NUEVO** - Implementación de morfología pulmonar usando triangulación de Delaunay. Combina la precisión del Template Matching con técnicas de morfología similares a ASM.
+    *   `delaunay_morphing/src/core/`: Motor de morfología Delaunay (`DelaunayLungMorpher`) con conectividad anatómica correcta.
+    *   `delaunay_morphing/processed_159/`: Datos procesados de las 159 imágenes y forma canónica calculada.
+    *   `delaunay_morphing/correct_tm_visualizations/`: **159 visualizaciones completas** mostrando landmarks exactos de Template Matching, morfología hacia forma canónica y triangulación de Delaunay.
+    *   Scripts de procesamiento: `process_all_159_images.py`, `fix_correct_tm_order.py`, `complete_remaining_correct.py`.
+
 *   **`coordenadas/`**: Directorio que almacena varios archivos CSV con coordenadas de puntos de referencia (landmarks) para diferentes conjuntos de datos (entrenamiento, prueba, originales, alineados, etc.). Estos archivos son fundamentales para el entrenamiento y la evaluación de los modelos de forma.
 
 *   **`indices/`**: Contiene archivos CSV con índices o metadatos que asocian las imágenes con sus respectivas coordenadas y categorías.
@@ -43,6 +56,14 @@ El proyecto contiene varios scripts principales para el entrenamiento y la evalu
 *   **Entrenamiento de Modelos ASM:**
     *   `pulmones/scripts/train_full_augmentation_asm.py`: Entrena un modelo ASM completo utilizando aumento de datos de forma y apariencia.
 
+*   **Template Matching (Precisión: 5.63±1.03px):**
+    *   `template_matching/scripts/train_eigenpatches.py`: Entrena el modelo de Template Matching con eigenpatches.
+    *   `template_matching/scripts/process_all_images.py`: Procesa todas las 159 imágenes de prueba.
+    *   `template_matching/scripts/interactive_viewer.py`: Visualizador interactivo de resultados reales.
+
+*   **Delaunay Morphing (NUEVO):**
+    *   `delaunay_morphing/process_all_159_images.py`: Procesa las 159 imágenes con morfología Delaunay usando landmarks de Template Matching.
+    *   `delaunay_morphing/fix_correct_tm_order.py`: Genera las 159 visualizaciones correctas con landmarks exactos de TM.
 
 *   **Evaluación y Análisis:**
     *   `pulmones/scripts/analyze_dataset_morphology.py`: Realiza un análisis morfológico del dataset.
@@ -51,11 +72,42 @@ El proyecto contiene varios scripts principales para el entrenamiento y la evalu
 Para ejecutar un script, navega a la carpeta raíz del proyecto (`Tesis/`) y usa el comando `python`:
 
 ```bash
+# Activar entorno virtual
+source pulmones/.venv/bin/activate
+
+# Entrenar ASM
 python pulmones/scripts/train_full_augmentation_asm.py
+
+# Entrenar Template Matching
+python template_matching/scripts/train_eigenpatches.py
+
+# Generar visualizaciones Delaunay (requiere Template Matching entrenado)
+python delaunay_morphing/fix_correct_tm_order.py
 ```
 
 ## Resultados y Modelos
 
-Los modelos entrenados se guardan en las respectivas carpetas `models/` dentro de cada subproyecto (e.g., `pulmones/models/`).
+Los modelos entrenados se guardan en las respectivas carpetas `models/` dentro de cada subproyecto:
 
-Los resultados de las evaluaciones, visualizaciones y análisis se encuentran en las carpetas `results/` y `analysis/` de cada subproyecto (e.g., `pulmones/results/`). Estos incluyen gráficos, informes CSV y visualizaciones de las deformaciones.
+*   **`pulmones/models/`**: Modelos ASM entrenados (forma y apariencia).
+*   **`template_matching/models/`**: Modelos de Template Matching entrenados con eigenpatches.
+    *   `landmark_predictor_*.pkl`: Predictor multi-escala entrenado.
+*   **`template_matching/results/`**: 
+    *   `results_coordenadas_prueba_1.pkl`: **Archivo clave** - Contiene las predicciones exactas de las 159 imágenes de prueba con error de 5.63±1.03px.
+
+### Visualizaciones Generadas
+
+*   **`template_matching/visualizations/all_test_images/`**: Visualizaciones de Template Matching para las 159 imágenes.
+*   **`delaunay_morphing/correct_tm_visualizations/`**: **159 visualizaciones completas** de morfología Delaunay con:
+    *   Landmarks exactos de Template Matching (error 5.63±1.03px)
+    *   Morfología hacia forma canónica usando triangulación de Delaunay  
+    *   Conectividad anatómica correcta de landmarks pulmonares
+    *   Triangulación superpuesta con métricas de calidad
+
+### Datos Procesados
+
+*   **`delaunay_morphing/processed_159/`**: 
+    *   `canonical_shape.npy`: Forma canónica calculada a partir de las 159 predicciones de Template Matching
+    *   Datos de morfología procesados para reproducir resultados
+
+Los resultados de las evaluaciones, visualizaciones y análisis se encuentran en las carpetas `results/` y `analysis/` de cada subproyecto. Estos incluyen gráficos, informes CSV y visualizaciones de las deformaciones.

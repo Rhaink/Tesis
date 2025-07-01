@@ -22,6 +22,17 @@ Alternative landmark detection method in `template_matching/` directory:
 2. **TemplateLandmarkPredictor** (`template_matching/src/core/landmark_predictor.py`): Multi-scale landmark prediction with geometric constraints
 3. **Performance**: Achieves **5.63 ± 1.03 pixels** average error on test set (159 images)
 
+### Delaunay Morphing Implementation (NEW)
+Novel lung morphology approach combining Template Matching precision with ASM-style image warping:
+
+1. **DelaunayLungMorpher** (`delaunay_morphing/src/core/delaunay_lung_morpher.py`): Implements Delaunay triangulation-based image morphing with anatomically correct landmark connectivity
+2. **Key Features**: 
+   - Uses exact Template Matching landmarks (5.63±1.03px error)
+   - Performs piecewise affine transformations via Delaunay triangulation
+   - Warps images to canonical/mean shape for morphological analysis
+   - Maintains anatomical lung contour and mediastinal connections
+3. **Results**: 159 complete visualizations showing TM landmarks, canonical morphing, and triangulation quality
+
 ### Data Flow Architecture
 - **Landmarks**: Stored as CSV files in `coordenadas/` with x,y coordinates for lung contours
 - **Images**: X-ray images organized by condition in `COVID-19_Radiography_Dataset/`
@@ -65,6 +76,21 @@ python template_matching/scripts/interactive_viewer.py --samples 20
 
 # Quick process with menu
 python template_matching/scripts/quick_process.py
+```
+
+### Delaunay Morphing Commands (NEW)
+```bash
+# Process all 159 images with Delaunay morphing using Template Matching landmarks
+python delaunay_morphing/process_all_159_images.py
+
+# Generate CORRECT visualizations with exact TM landmarks (5.63±1.03px error)
+python delaunay_morphing/fix_correct_tm_order.py
+
+# Complete any remaining visualizations 
+python delaunay_morphing/complete_remaining_correct.py
+
+# View completed results
+ls delaunay_morphing/correct_tm_visualizations/*.png | wc -l  # Should show 159
 ```
 
 ### Analyzing Dataset Morphology
@@ -179,6 +205,32 @@ template_matching/
     │   ├── landmark_predictions/   # Landmark overlays
     │   └── lung_contours/         # Anatomical contours
     └── ...
+```
+
+## Delaunay Morphing Results (NEW)
+
+### Performance and Features
+- **Input**: Exact Template Matching landmarks (5.63±1.03px error maintained)
+- **Method**: Delaunay triangulation-based piecewise affine transformation
+- **Output**: Images warped to canonical/mean shape for morphological analysis
+- **Anatomical Correctness**: Maintains proper lung contour and mediastinal connections
+
+### Key Files Generated
+```
+delaunay_morphing/
+├── src/core/
+│   └── delaunay_lung_morpher.py       # Core morphing engine
+├── processed_159/
+│   ├── canonical_shape.npy            # Mean shape from 159 TM predictions
+│   └── tm_predictions_*.npy           # Processed landmark data
+├── correct_tm_visualizations/         # *** 159 COMPLETE VISUALIZATIONS ***
+│   ├── Normal_001_Normal-3173.png     # Shows: TM landmarks + Warped + Triangulation
+│   ├── COVID_002_COVID-1652.png       # 3-panel visualization per image
+│   └── ... (159 total files)
+└── Scripts:
+    ├── process_all_159_images.py      # Main processing pipeline
+    ├── fix_correct_tm_order.py        # Generate correct visualizations
+    └── complete_remaining_correct.py  # Complete any missing files
 ```
 
 ## Common Issues and Solutions
