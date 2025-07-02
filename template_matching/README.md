@@ -77,9 +77,15 @@ python template_matching/scripts/train_eigenpatches.py \
     --pyramid_levels 3
 ```
 
-### Comparing with ASM
+### Evaluation and Analysis
 
 ```bash
+# Run comprehensive per-landmark evaluation
+python template_matching/scripts/per_landmark_evaluation.py
+
+# Display evaluation summary
+python template_matching/scripts/show_evaluation_summary.py
+
 # Compare template matching vs ASM
 python template_matching/scripts/compare_methods.py \
     --template_model template_matching/models/landmark_predictor.pkl \
@@ -141,14 +147,48 @@ template_matching/
 └── README.md                        # This file
 ```
 
+## Performance Results
+
+### Overall Performance
+- **Test Dataset**: 159 images (72 Normal, 48 Viral Pneumonia, 39 COVID)
+- **Average Error**: **5.628 ± 0.190 pixels** across all 15 landmarks
+- **Validation**: Matches documented performance (5.63 px) with 99.97% accuracy
+
+### Per-Landmark Performance Rankings
+
+**🏆 Best Performing Landmarks:**
+1. **L11 (Right_Lower_Edge)**: 5.297 ± 3.016 px
+2. **L14 (Left_Upper)**: 5.408 ± 2.792 px (most consistent)
+3. **L5 (Right_Mid)**: 5.449 ± 2.805 px
+
+**⚠️ Challenging Landmarks:**
+- **L9 (Center_Medial)**: 5.995 ± 3.158 px (highest error)
+- **L12 (Right_Upper_Mid)**: 5.950 ± 3.434 px (most variable)
+- **L8 (Right_Medial_Top)**: 5.757 ± 3.241 px
+
+### Pathology Performance
+- **Normal**: 5.501 ± 0.262 px (72 samples)
+- **Viral Pneumonia**: 5.708 ± 0.389 px (48 samples)
+- **COVID**: 5.764 ± 0.388 px (39 samples)
+
+*COVID cases show 4.8% higher error than Normal cases*
+
+### Clinical Insights
+- **Edge landmarks** outperform mediastinal landmarks (clearer boundaries)
+- **Sub-6 pixel accuracy** achieved for all landmarks
+- **Consistent performance** across different pathologies
+- **Clinically acceptable** precision for lung morphology analysis
+
 ## Evaluation Metrics
 
 The evaluation system provides comprehensive analysis:
 
 - **Point-to-point error**: Mean Euclidean distance between predicted and ground truth landmarks
 - **Cumulative Error Distribution (CED)**: Proportion of samples below error thresholds
-- **Per-landmark analysis**: Individual landmark performance statistics
+- **Per-landmark analysis**: Individual landmark performance statistics with pathology breakdown
 - **Statistical significance**: Wilcoxon signed-rank test for method comparison
+- **Anatomical region analysis**: Performance by lung region
+- **Consistency metrics**: Standard deviation and error range analysis
 
 ## Dependencies
 

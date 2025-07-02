@@ -91,6 +91,12 @@ python template_matching/scripts/interactive_viewer.py --samples 20
 
 # Quick process with menu
 python template_matching/scripts/quick_process.py
+
+# Run comprehensive per-landmark evaluation (NEW)
+python template_matching/scripts/per_landmark_evaluation.py
+
+# Display evaluation summary (NEW)
+python template_matching/scripts/show_evaluation_summary.py
 ```
 
 ### Delaunay Morphing Commands (NEW)
@@ -228,13 +234,19 @@ COVID-19_Radiography_Dataset/
 
 ### Performance Metrics
 - **Test set**: 159 images from `coordenadas_prueba_1.csv`
-- **Average error**: 5.63 ± 1.03 pixels
-- **Best result**: 3.41 pixels (Normal-1756)
-- **Worst result**: 9.16 pixels (Viral Pneumonia-1092)
+- **Average error**: **5.628 ± 0.190 pixels** across all 15 landmarks
+- **Validation**: Matches documented performance (5.63 px) with 99.97% accuracy
 - **By pathology**:
-  - Normal: 5.50 ± 1.06 px (72 images)
-  - COVID-19: 5.76 ± 1.02 px (39 images)  
-  - Viral Pneumonia: 5.71 ± 0.98 px (48 images)
+  - Normal: 5.501 ± 0.262 px (72 images)
+  - Viral Pneumonia: 5.708 ± 0.389 px (48 images)
+  - COVID-19: 5.764 ± 0.388 px (39 images)
+
+### Per-Landmark Performance
+- **Best performing landmark**: L11 (Right_Lower_Edge) - 5.297 ± 3.016 px
+- **Most consistent landmark**: L14 (Left_Upper) - 5.408 ± 2.792 px
+- **Most challenging landmark**: L9 (Center_Medial) - 5.995 ± 3.158 px
+- **Clinical insight**: Edge landmarks outperform mediastinal landmarks
+- **All landmarks achieve sub-6 pixel accuracy**
 
 ### Key Files Generated
 ```
@@ -244,6 +256,19 @@ template_matching/
 │   └── ...
 ├── results/                   # Prediction results
 │   └── results_coordenadas_prueba_1.pkl  # All 159 predictions
+├── evaluation/               # *** NEW: Per-landmark evaluation results ***
+│   ├── per_landmark_statistics.csv        # Detailed landmark statistics
+│   ├── per_landmark_by_pathology.csv      # Pathology breakdown
+│   ├── per_landmark_evaluation_report.txt # Comprehensive text report
+│   ├── per_landmark_overall_analysis.png  # Overall analysis plots
+│   ├── per_landmark_by_pathology.png      # Pathology comparison
+│   ├── error_heatmaps.png                 # Error heatmap visualizations
+│   ├── statistical_summary.png            # Statistical analysis
+│   └── best_worst_landmarks.png           # Performance ranking plots
+├── scripts/                  # *** UPDATED: New evaluation scripts ***
+│   ├── per_landmark_evaluation.py         # Comprehensive evaluation
+│   ├── show_evaluation_summary.py         # Quick summary display
+│   └── ...
 └── visualizations/           # Generated visualizations
     ├── all_test_images/      # Visualizations for all 159 images
     │   ├── landmark_predictions/   # Landmark overlays

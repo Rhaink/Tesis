@@ -1,0 +1,72 @@
+================================================================================
+TEMPLATE MATCHING - PER-LANDMARK PRECISION EVALUATION
+================================================================================
+
+OVERALL SUMMARY
+----------------------------------------
+Total samples: 159
+Total landmarks: 15
+Average error across all landmarks: 5.628 ± 0.183 pixels
+
+PER-LANDMARK DETAILED STATISTICS
+--------------------------------------------------
+Landmark   Region               Mean     Std      Median   Min      Max     
+--------------------------------------------------------------------------------
+L0         Right_Top            5.500    3.046    5.455    0.438    14.262  
+L1         Left_Top             5.501    3.114    4.866    0.120    13.796  
+L2         Right_Lower          5.715    3.290    5.276    0.475    17.508  
+L3         Right_Middle         5.657    2.875    5.314    0.626    16.726  
+L4         Right_Middle_Low     5.724    3.036    5.259    0.565    18.433  
+L5         Right_Mid            5.449    2.805    4.935    0.364    13.631  
+L6         Left_Middle_Low      5.627    2.943    5.296    0.355    14.929  
+L7         Right_Upper          5.590    3.257    5.085    0.434    15.831  
+L8         Right_Medial_Top     5.757    3.241    5.209    0.738    16.315  
+L9         Center_Medial        5.995    3.158    5.597    0.480    15.774  
+L10        Left_Medial_Top      5.688    3.238    5.275    0.488    23.642  
+L11        Right_Lower_Edge     5.297    3.016    4.915    0.252    16.667  
+L12        Right_Upper_Mid      5.950    3.434    5.416    0.186    17.757  
+L13        Left_Upper_Mid       5.561    2.940    5.092    0.360    14.387  
+L14        Left_Upper           5.408    2.792    4.982    0.771    13.388  
+
+LANDMARK PERFORMANCE RANKING
+----------------------------------------
+Best performing landmarks (lowest error):
+  1. Landmark 11: 5.297 pixels
+  2. Landmark 14: 5.408 pixels
+  3. Landmark 5: 5.449 pixels
+
+Worst performing landmarks (highest error):
+  1. Landmark 9: 5.995 pixels
+  2. Landmark 12: 5.950 pixels
+  3. Landmark 8: 5.757 pixels
+
+PATHOLOGY BREAKDOWN
+----------------------------------------
+Normal (n=72):
+  Overall mean: 5.501 ± 0.253 pixels
+  Best landmark: L7 (5.089 px)
+  Worst landmark: L2 (5.895 px)
+
+Viral Pneumonia (n=48):
+  Overall mean: 5.708 ± 0.376 pixels
+  Best landmark: L3 (5.035 px)
+  Worst landmark: L8 (6.338 px)
+
+COVID (n=39):
+  Overall mean: 5.764 ± 0.375 pixels
+  Best landmark: L2 (5.055 px)
+  Worst landmark: L7 (6.562 px)
+
+STATISTICAL ANALYSIS
+----------------------------------------
+Pairwise comparisons between pathologies (Wilcoxon rank-sum test):
+  Normal vs Viral Pneumonia: Could not compute
+  Normal vs COVID: Could not compute
+  Viral Pneumonia vs COVID: Could not compute
+
+TECHNICAL DETAILS
+----------------------------------------
+• Error metric: Euclidean distance between predicted and ground truth landmarks
+• Coordinate system: 64x64 reference system
+• Template Matching method: PCA-based eigenpatches with multi-scale prediction
+• Evaluation dataset: coordenadas_prueba_1.csv (159 test images)
