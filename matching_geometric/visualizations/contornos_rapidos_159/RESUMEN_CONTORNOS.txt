@@ -1,0 +1,66 @@
+RESUMEN DE COMPARACIONES CON CONTORNOS ANATÓMICOS
+==================================================
+
+Total de comparaciones generadas: 159/159 (100% éxito)
+Tiempo de procesamiento: ~1.5 segundos
+Velocidad: ~106 imágenes/segundo
+
+CONTENIDO DE CADA IMAGEN:
+=========================
+
+Cada archivo PNG muestra 3 paneles horizontales:
+
+1. GROUND TRUTH (Izquierda)
+   - Contornos VERDES con conexiones anatómicas
+   - Puntos verdes en cada landmark
+   - Referencia manual "gold standard"
+
+2. TEMPLATE MATCHING (Centro)  
+   - Contornos ROJOS con todas las conexiones
+   - 15 landmarks completos
+   - Método de 5.63px error promedio
+
+3. MATCHING GEOMÉTRICO (Derecha)
+   - LÍNEA VERDE principal (puntos 0-1)
+   - Puntos ROJOS principales (0, 1)
+   - Puntos AMARILLOS cuartil (Q1, M, Q3)
+   - Método híbrido optimizado
+
+CONEXIONES ANATÓMICAS MOSTRADAS:
+================================
+
+Contorno pulmonar:
+  (0→12→3→5→7→14→1)
+
+Contorno mediastinal:  
+  (1→13→6→4→2→11→0)
+
+Línea central:
+  (0→8→9→10→1)
+
+DISTRIBUCIÓN POR CATEGORÍA:
+==========================
+
+- Normal: ~72 imágenes
+- COVID-19: ~39 imágenes  
+- Viral Pneumonia: ~48 imágenes
+
+CARACTERÍSTICAS TÉCNICAS:
+=========================
+
+- Formato: PNG de alta calidad
+- Resolución: 299x299 por panel
+- Tamaño total: ~897x299 píxeles
+- Sin texto superpuesto para claridad visual
+- Nomenclatura: contorno_XXX_ImageName.png
+
+UBICACIÓN:
+=========
+
+/home/donrobot/Projects/Tesis/matching_geometric/visualizations/contornos_rapidos_159/
+
+Este conjunto permite comparación visual directa de:
+✓ Precisión de contornos anatómicos
+✓ Diferencias entre métodos  
+✓ Efectividad del enfoque geométrico
+✓ Calidad de las conexiones de landmarks

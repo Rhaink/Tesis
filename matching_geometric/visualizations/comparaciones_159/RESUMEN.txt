@@ -1,0 +1,16 @@
+RESUMEN DE COMPARACIONES GENERADAS
+==================================================
+
+Total de comparaciones: 159
+
+Por categoría:
+  Normal: 72 imágenes
+  COVID: 39 imágenes
+  Viral: 48 imágenes
+
+Cada imagen muestra:
+  - Ground Truth (referencia manual)
+  - Template Matching (15 landmarks)
+  - Matching Geométrico (línea + cuartiles)
+
+Ubicación: /home/donrobot/Projects/Tesis/matching_geometric/visualizations/comparaciones_159
